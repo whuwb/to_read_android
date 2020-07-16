@@ -14,7 +14,7 @@ import java.util.List;
 public class ToReads {
     private List<ToReadItem> items = new ArrayList<>();
 
-    public ToReads(String content, Boolean needHeader) throws JSONException {
+    public ToReads(String content) throws JSONException {
 
         JSONArray jsonArray = new JSONArray(content);
 

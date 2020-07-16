@@ -23,4 +23,17 @@ public class Utils {
             return response.body().string();
         }
     }
+
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+    public static String searchToReads(String key) throws IOException {
+        OkHttpClient client = new OkHttpClient();
+
+        Request request = new Request.Builder()
+                .url("http://39.98.113.183/reads/search/" + key)
+                .build();
+
+        try (Response response = client.newCall(request).execute()) {
+            return response.body().string();
+        }
+    }
 }

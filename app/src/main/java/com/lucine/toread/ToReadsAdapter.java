@@ -12,10 +12,14 @@ import com.lucine.toread.model.ToReads;
 
 public class ToReadsAdapter extends BaseAdapter {
     private final Context mContext;
-    private final ToReads toReads;
+    private ToReads toReads;
 
     public ToReadsAdapter(Context context, ToReads toReads) {
         this.mContext = context;
+        this.toReads = toReads;
+    }
+
+    public void setToReads(ToReads toReads) {
         this.toReads = toReads;
     }
 

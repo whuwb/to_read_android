@@ -11,6 +11,7 @@
 
     <ListView
         android:id="@+id/listview"
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
@@ -19,5 +20,12 @@
         android:verticalSpacing="24dp"
         android:horizontalSpacing="10dp"
         android:stretchMode="spacingWidthUniform"
+        />
+
+    <SearchView
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
         />
 </RelativeLayout>
